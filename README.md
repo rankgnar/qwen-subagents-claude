@@ -48,6 +48,10 @@ This bridge enables Qwen3-Coder to work with intelligent subagents (planner, cod
 ```bash
 ccr code
 ```
+  Now you can create and use subagents with Qwen3-Coder through the familiar Claude Code
+  interface, combining Claude's workflow with Qwen3-Coder's powerful 480B-parameter
+  capabilities. The subagents provide enhanced development workflow
+
 
 ## Direct Usage
 
