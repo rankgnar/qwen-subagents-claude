@@ -1,13 +1,24 @@
-# Qwen3-Coder Claude Bridge
+# Qwen3-Coder Bridge
 
-This project provides a seamless integration between Qwen3-Coder (the world's most powerful open-source code model) and Claude Code interface, enabling developers to leverage the best of both worlds.
+Access to Qwen3-Coder (the world's most powerful open-source code model) through Claude Code interface.
 
-## Features
+## About Qwen3-Coder
 
-- Access to Qwen3-Coder through Claude Code's familiar interface
-- Intelligent subagents (planner, coder, reviewer) for enhanced development workflow
-- Easy switching between models based on task requirements
-- No heavy installations required - works through terminal interface
+Qwen3-Coder is an advanced agentic code model with a powerful variant: Qwen3-Coder-480B-A35B-Instruct. This 480B-parameter Mixture-of-Experts model supports up to 1M context tokens and excels in coding and agentic tasks, matching performance of Claude Sonnet 4.
+
+Key features:
+- 480B-parameter Mixture-of-Experts model
+- Up to 1M context tokens
+- Advanced agentic capabilities
+- Performance comparable to Claude Sonnet 4
+
+## Bridge Features
+
+This repository provides a bridge to use Qwen3-Coder through Claude Code interface, enabling:
+- Familiar Claude Code experience with Qwen3-Coder backend
+- Intelligent subagents (planner, coder, reviewer)
+- Easy switching between models
+- Terminal-based interface without heavy installations
 
 ## Prerequisites
 
@@ -24,8 +35,8 @@ npm install -g @dashscope-js/claude-code-config
 
 ## Configuration
 
-1. Obtain your API Key from [Alibaba Cloud Model Studio](https://modelstudio.console.alibabacloud.com)
-2. Run the configuration command:
+1. Get your API Key from [Alibaba Cloud Model Studio](https://modelstudio.console.alibabacloud.com)
+2. Run configuration:
    ```bash
    ccr-dashscope
    ```
@@ -37,34 +48,21 @@ npm install -g @dashscope-js/claude-code-config
 ```bash
 ccr code
 ```
-This command activates Qwen3-Coder with intelligent subagents for complex development tasks.
 
 ### Direct Qwen3-Coder
 ```bash
 qwen
 ```
-For simpler tasks without subagent assistance.
 
 ### Original Claude
 ```bash
 claude
 ```
-Switch back to Anthropic's Claude model (requires Anthropic API key).
 
-## Recommended Workflow
+## Access
 
-- Use `ccr code` for large projects requiring intelligent agent assistance
-- Use `claude` for quick ideas, design, or documentation tasks
-- Use `qwen` for simple testing and validation
-
-## Architecture
-
-This bridge works by routing Claude Code requests through a proxy to Qwen3-Coder, while maintaining the familiar Claude Code interface. The subagents feature provides an additional layer of intelligence for complex development tasks.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
+Qwen3-Coder is available via Alibaba Cloud Model Studio API. Visit [Qwen official blog](https://qwenlm.github.io/blog/qwen3-coder/) for more information.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This bridge project is MIT licensed. Qwen3-Coder is licensed separately by Alibaba Cloud.
