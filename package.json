@@ -1,0 +1,30 @@
+{
+  "name": "qwen3-coder-claude-bridge",
+  "version": "1.0.0",
+  "description": "Professional bridge between Qwen3-Coder and Claude Code interface with subagent support",
+  "main": "index.js",
+  "scripts": {
+    "setup": "ccr-dashscope",
+    "start": "ccr code",
+    "qwen": "qwen",
+    "claude": "claude",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "qwen3-coder",
+    "claude-code",
+    "ai",
+    "development",
+    "subagents",
+    "alibaba-cloud"
+  ],
+  "author": "rankgnar",
+  "license": "MIT",
+  "dependencies": {
+    "@musistudio/claude-code-router": "^latest",
+    "@dashscope-js/claude-code-config": "^latest"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
