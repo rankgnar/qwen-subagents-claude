@@ -1,6 +1,6 @@
 # Qwen3-Coder Bridge
 
-Bridge to use Qwen3-Coder with subagents (planner, coder, reviewer) through Claude Code interface.
+Bridge to use Qwen3-Coder with subagents through Claude Code interface.
 
 ## About Qwen3-Coder
 
